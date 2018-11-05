@@ -1,3 +1,5 @@
+//This code is under development!
+//This code was written with Managed C++. Consider that there is a Garbage Collector.
 #include <iostream>
 using namespace std;
 
@@ -97,12 +99,11 @@ public:
 		
 		iterator = head;
 
-		while (iterator->next->next != NULL)
-		{
-			
+		while (iterator->next->next != NULL) // Using tail is also available here.
+		{			
 			iterator = iterator->next;
 		}
-		iterator->next = NULL;
+		iterator->next = NULL; //
 	}
 
 	void deletenode_beginning()
@@ -120,8 +121,7 @@ public:
 			if (position == 1)
 			{
 				temp = head->next;
-				head = temp;
-				
+				head = temp;		
 			}			
 			else
 			{
@@ -162,12 +162,9 @@ public:
 		else
 		{
 			cout << "one or both list cannot found" << endl;
-		}
-	
+		}	
 	}
-
 };
-
 
 int main() 
 {
@@ -222,5 +219,4 @@ int main()
 	a.deletenode_location(1);   // position must be greater than 0 and lower than max size of list.
 	cout << "this is 'a+b' list that deleted position 0" << endl;
 	a.viewlist();
-
 }
