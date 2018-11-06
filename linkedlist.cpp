@@ -1,5 +1,5 @@
 //This code is under development!
-//This code was written with Managed C++. Consider that there is a Garbage Collector.
+//This code has memory leak. This leaks will be deleted soon.
 #include <iostream>
 using namespace std;
 
