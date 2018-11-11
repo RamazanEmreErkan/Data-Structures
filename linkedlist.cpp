@@ -73,23 +73,24 @@ public:
 
 	void addnode_location(int item, int position)
 	{
-		node *current = new node;
-		current->data = item; 
-		
-		if (position==0)
+		node *temp = new node;
+		temp->data = item;
+
+		if (position == 0)				
 		{
-			current->next = head;
-			head = current;
+			temp->next = head;      
+			head = temp;
 		}
 		else
 		{
-			node *temp = head;
-			for (int i =1; i < position-1; i++)
+			node *current= head;						
+			for (int i = 1; i < position-1; i++)		
 			{
-				temp = temp->next;
+				current = current->next;				
 			}
-			current->next = temp->next;
-			temp->next = current;
+			temp->next = current->next;				
+			current->next = temp;
+		}
 		}
 	}
 	
