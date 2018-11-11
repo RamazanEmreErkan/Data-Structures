@@ -57,6 +57,7 @@ public:
 			temp = front;
 			front = front->next;
 			delete temp;
+			return 0;
 		}
 	}
 
