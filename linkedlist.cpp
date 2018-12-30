@@ -1,5 +1,4 @@
 //This code is under development!
-//This code has memory leak. This leaks will be deleted soon.
 #include <iostream>
 using namespace std;
 
